@@ -2,26 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 a = np.array([2,4])
 b = np.array([7,8])
-
-x = np.arange(-10, 10, 0.1)
-y = np.zeros(len(x))
-dist = a- b
-dist = np.dot(dist,dist)
-print (dist)
-a1=a[0]
-a2 = a[1]
-b1 = b[0]
-b2 = b[1]
-
-
-for i in range(0,  len(x)):
-   y[i]= a2+ (1/(b2-a2))*((dist/2)-(b1-a1)*(x[i]-a1))
-
-plt.plot(x,y)
-plt.scatter(a[0],a[1],c='g')
-plt.scatter(b[0],b[1],c='b')
-plt.gca().set_aspect('equal')
-plt.show()
-
-# print (a[:,2])
+a = np.arange(9).reshape(3,3)
+# print (a)
+# b = a[:,[1,2]]
 # print (b)
+for i in range(0, 3):
+    for j in range(0,3):
+        if j==1:
+            break
+    print ("Hello")
